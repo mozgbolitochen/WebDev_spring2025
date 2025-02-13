@@ -1,0 +1,58 @@
+.container{
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+h3{
+    background-color: black;
+    color: #848483;
+    padding: 10px 30px;
+    font-weight: 200;
+}
+h2{
+    font-weight: 200;
+    text-align: left;
+}
+#main{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+#task{
+    width: 65%;
+}
+input{
+    padding: 8px;
+    border-radius: 5px;
+}
+button{
+    padding: 8px 15px;
+    background-color: #3175AF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 3%;
+    border-radius: 5px;
+}
+
+ul{
+    list-style: none;
+}
+li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #848483;
+    border-radius: 9px;
+}
+.taskContainer span{
+    margin-left: 30px;
+}
+
+.done{
+    text-decoration: line-through;
+}
+.delete{
+    color: red;
+    cursor: pointer;
+}
