@@ -1,0 +1,70 @@
+/* 📌 Общий фон в морском стиле */
+body {
+    background: linear-gradient(120deg, #013a63, #028090); 
+    color: white;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* 📌 Заголовки */
+  h1, h2, h3 {
+    text-align: center;
+    color: #f1faff; /* Светлый оттенок */
+  }
+  
+  /* 📌 Карточки */
+  .card {
+    background: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый */
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    backdrop-filter: blur(5px); /* Эффект размытия */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* 📌 Кнопки */
+  button {
+    background: #00a896; /* Цвет морской волны */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #05668d; /* Темнее при наведении */
+  }
+  
+  /* 📌 Контейнер сетки */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* 📌 Инпут */
+  input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    width: 80%;
+    margin-bottom: 10px;
+  }
+  
+  input:focus {
+    box-shadow: 0px 0px 5px #00a896;
+  }
+  

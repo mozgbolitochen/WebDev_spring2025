@@ -1,0 +1,8 @@
+<h2>Album Details</h2>
+
+<p><strong>ID:</strong> {{ album?.id }}</p>
+<p><strong>Title:</strong>{{album.newTitle}}</p>
+
+<br />
+<button (click)="goBack()">Return</button>
+<a *ngIf="album" [routerLink]="['/albums', album.id, 'photos']">Photos</a>

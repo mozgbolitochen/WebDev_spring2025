@@ -1,0 +1,8 @@
+<h2>Album Photos</h2>
+
+<div class="photos-grid">
+  <img *ngFor="let photo of photos" [src]="photo.thumbnailUrl" [alt]="photo.title">
+</div>
+
+<button (click)="goBack()">Return</button>
+

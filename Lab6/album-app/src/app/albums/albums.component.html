@@ -1,0 +1,18 @@
+
+<h2>Albums</h2>
+
+<input [(ngModel)]="newAlbumTitle" placeholder="New album title" />
+<button (click)="addAlbum()">Add Album</button>
+
+<ul>
+  <li *ngFor="let album of albums">
+    <a *ngIf="!album.isEditing" [routerLink]="['/albums', album.id]">{{ album.title }}</a>
+    <!-- <span >{{ album.title }}</span> -->
+    <input *ngIf="album.isEditing" [(ngModel)]="album.newTitle">
+  
+    <button *ngIf="!album.isEditing" (click)="editAlbum(album)">✏ Edit</button>
+    <button *ngIf="album.isEditing" (click)="saveAlbum(album, album.newTitle)">💾 Save</button>
+  
+    <button (click)="deleteAlbum(album.id)">Delete</button>
+  </li>
+</ul>
