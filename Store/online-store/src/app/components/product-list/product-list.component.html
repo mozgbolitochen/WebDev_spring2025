@@ -1,0 +1,24 @@
+
+<div class="filters">
+  <button *ngFor="let category of categories" (click)="setCategory(category)">
+    {{ category }}
+  </button>
+</div>
+<div *ngIf="category">
+  <h1>
+    {{ category }}
+  </h1>
+</div>
+
+
+<div class="product-grid">
+  <app-product-item 
+    *ngFor="let product of filteredProducts" 
+    [product]="product"
+    (like)="likeProduct($event)"
+    (remove)="removeProduct($event)"
+    (addToCart) ="addToCart($event)"
+    (removeFromCart) ="removeFromCart($event)"
+    >
+  </app-product-item>
+</div>
