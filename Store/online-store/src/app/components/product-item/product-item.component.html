@@ -1,0 +1,15 @@
+<div class="product-card">
+    <a [href]="product.link" target="_blank">
+      <img [src]="product.image" alt="{{ product.name }}">
+    </a>
+    <div>
+      <h3>{{ product.name }}</h3>
+      <p>❤️ {{ product.likes }}</p>
+      <a (click)="onRemoveFromCart()">🛒 In cart: {{ product.inCart ? 'Yes' : 'No' }}</a>
+    </div>
+    <button (click)="onLike()">Like</button>
+    <button (click)="onRemove()">Remove</button>
+    <button (click)="onAddToCart()">Add to cart</button>
+    
+  </div>
+  
